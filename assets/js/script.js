@@ -42,6 +42,7 @@ throw `unknown game type ${gameType} . Aborting!`;
  * the returned calculateCorrectAnswer() array
  */
 function checkAnswer(){
+
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calculateCorrectAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
@@ -61,6 +62,7 @@ runGame(calculatedAnswer[1]);
  * directly from the dom,and reurens the correct answer
  */
 function calculateCorrectAnswer(){
+    
 let operand1 = parseInt(document.getElementById("operand1").innerText);
 let operand2 = parseInt(document.getElementById("operand2").innerText);
 let operator = document.getElementById("operator").innerText;
